@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ol,ul,li,a {list-style: none; text-decoration: none; color: black; font-size: 14px; font-family: 'Montserrat', sans-serif;}
+html {scroll-behavior: smooth; }
+
+.header-wrap {width: 100%; height: auto; display: flex; justify-content: center;}
+.header-wrap .container {width: 100%; max-width: 1280px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.header-wrap .container .logo {padding: 3.5rem 2rem 2rem; display: flex; justify-content: center;}
+
+.header-wrap .nav-wrap {list-style: none; display: flex; padding: 1rem;column-gap: 2rem;}
+.header-wrap .nav-wrap > li {margin: 0 .5rem .5rem ;}
+.header-wrap .nav-wrap > li >  a {font-size: 16px;}
+
+.mobile-btn-wrapper{display: none;}
+
+.img-slider {width: 100%; height: auto;}
+.swiper-backface-hidden .swiper-slide {display: flex; justify-content: center; padding: 1rem; width: 90%; height: auto;}
+.swiper-button {color: black;}
+/* .swiper-button-next, .swiper-button-prev {color: black;} */
+
+.footer-wrapper {padding: 2rem;}
+
+.footer-wrap {width: 100%; height: auto; border-top: 1px solid #dedede; padding-top: 1rem;  display: flex; justify-content: center;}
+.footer-wrap .container {width: 100%; max-width: 1280px; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.footer-wrap .footer-nav-wrap {display: flex; justify-content: center; column-gap: 2rem; padding: .25rem;}
+
+.footer-wrap .footer-logo {display: flex; justify-content: center;}
+.footer-wrap .footer-logo img {padding: 1rem; display: flex;}
+
+.footer-wrap .sns-wrap {display: flex; justify-content: center; padding: 1rem;}
+.footer-wrap .sns-wrap .sns-links {padding: 1rem;}
+.footer-wrap .sns-wrap .sns-links > li {width: 100%}
+.footer-wrap .sns-wrap .sns-links > li > a {width: 100%;}
+.footer-wrap .sns-wrap .sns-links img {max-width: 30px;}
+
+.footer-wrap .footer-info {display: flex; justify-content: center; padding: .25rem;}
+.footer-wrap .footer-info > li {padding: .5rem;}
+.footer-wrap .footer-info > li > span {font-size: 12px; color: #777;}
+
+.footer-wrap .footer-copy {font-size: 12px; margin: 1rem 0 2rem; color: #777; display: flex; justify-content:center}
+
+.swiper-backface-hidden .swiper-slide {padding: 1rem 1rem 5rem;}
+.swiper-slide img {width: 100%; max-width: 1000px;}
+
+/*위에서 살짝 떨어지는 밑줄*/
+.drop-in-underline {
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .drop-in-underline:before{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0; right: 0;
+    height: 1.5px;
+    background-color: black;
+  }
+  .drop-in-underline:before{
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+      transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .drop-in-underline:hover:before{
+    opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  /*위에서 살짝 떨어지는 밑줄:끝*/

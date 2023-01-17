@@ -1,0 +1,62 @@
+.mobile-menus {display: none;}
+/* .mobile-btn{display: none;} */
+
+/* Mobile Nai */
+.mobile-nav-wrap {}
+.mobile-nav-wrap.active {width: 200px; height: 100vh; background: #fff; display: block; position: fixed; top: 0; left: 0; z-index: 1000; border-right: 1px solid black;}
+.mobile-nav-wrap.active .mobile-nav-container {width: 100%; margin-top: 1rem;}
+.mobile-nav-wrap.active .mobile-nav-container .mobile-nav-logo {width: 100px; margin: auto;}
+.mobile-nav-wrap.active .mobile-nav-container .mobile-nav-logo img {width: 100%;}
+.mobile-nav-wrap.active .mobile-nav-container > li {width: 80px; padding: 1.2rem; display: flex; justify-content: center; margin: auto;}
+
+.overlay {width: 100%; height: 100%; position: fixed; top: 0; left: 0;  opacity:0; visibility: hidden;}
+.overlay.show {display: block; transition: all .3s ease-in-out; visibility: visible;background:#000; opacity:0.5; z-index:900;}
+
+/* .mobile-btn{width:1.8rem; height:auto; display:flex; flex-direction: column; row-gap: 0.35rem;}
+.mobile-btn span{width:100%; height:2px; background:#000; } */
+
+.mobile-btn{width:1.8rem; cursor:pointer;}
+span.bar_line{display:block; width:100%; height:2px; background:black; transition:all 0.3s; position:relative; margin:auto; border-radius:2px;}
+span.bar_line:nth-child(2){margin:5px auto;}
+
+.mobile-btn.active {z-index: 2000;}
+.mobile-btn.active span {background: #fff;}
+ 
+.mobile-btn.active span.bar_line:nth-child(1){animation:ease 0.5s top forwards;}
+.mobile-btn.active span.bar_line:nth-child(2){animation:ease 0.5s scaled forwards;}
+.mobile-btn.active span.bar_line:nth-child(3){animation:ease 0.5s bottom forwards;}
+ 
+.mobile-btn.not-active span.bar_line:nth-child(1){animation:ease 0.5s top-back forwards;}
+.mobile-btn.not-active span.bar_line:nth-child(2){animation:ease 0.5s scaled-back forwards;}
+.mobile-btn.not-active span.bar_line:nth-child(3){animation:ease 0.5s bottom-back forwards;}
+
+@keyframes top{
+  0%{top:0; transform:rotate(0);}
+  50%{top:10px; transform:rotate(0);}
+  100%{top:10px; transform:rotate(40deg);}
+ }
+ @keyframes scaled{
+  0%{transform:scale(0);}
+  100%{transform:scale(0);}
+ }
+ @keyframes bottom{
+  0%{bottom:0; transform:rotate(0);}
+  50%{bottom:10px; transform:rotate(0);}
+ 100%{bottom:5px; transform:rotate(140deg);}
+}
+ 
+@keyframes top-back{
+ 0%{top:10px; transform:rotate(40deg);}
+ 50%{top:10px; transform:rotate(0);}
+ 100%{top:0; transform:rotate(0);}
+}
+@keyframes scaled-back{
+ 0%{transform:scale(0);}
+ 50%{transform:scale(0);}
+ 100%{transform:scale(1);}
+}
+@keyframes bottom-back{
+ 0%{bottom:5px; transform:rotate(140deg);}
+ 50%{bottom:10px; transform:rotate(0);}
+ 100%{bottom:0; transform:rotate(0);}
+}

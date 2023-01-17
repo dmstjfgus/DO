@@ -1,0 +1,9 @@
+.about-wrapper {width: 100%; height: auto; display: flex; justify-content: center;}
+.about-wrapper .about-container {width: 100%; max-width: 1280px; height: auto;}
+.about-wrapper .about-container .about-title {display: flex; justify-content: center; text-align: center; font-size: 46px; padding: 3rem 0; font-weight: 400; font-family: fantasy; line-height: 80px;}
+
+.about-wrapper .about-container .about-image {width: 96%; max-width: 1280px; height: auto; max-height: 700px; display: flex; align-items: center; margin: auto; overflow: hidden;}
+.about-wrapper .about-container .about-image img {width: 100%; height: 100%;}
+
+.about-wrapper .about-container .about-content {width: 85%; max-width: 1000px; height: auto; margin: auto;}
+.about-wrapper .about-container p {text-align: center; padding: 3rem 0; font-size: 18px; line-height: 30px; color: #666;}

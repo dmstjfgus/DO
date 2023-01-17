@@ -1,0 +1,28 @@
+.contact-wrapper {width: 100%; height: auto; display: flex; justify-content: center;}
+.contact-wrapper .contact-container {width: 100%; max-width: 1280px; height: auto;}
+.contact-wrapper .contact-container .contact-title {display: flex; justify-content: center; text-align: center; font-size: 46px; padding: 3rem 0; font-weight: 400; font-family: fantasy; line-height: 80px;}
+
+.contact-wrapper .contact-container .contact-image {width: 96%; max-width: 1280px; height: auto; max-height: 400px; display: flex; align-items: center; margin: auto; overflow: hidden;}
+.contact-wrapper .contact-container .contact-image img {width: 100%; height: 100%;}
+
+.contact-wrapper .contact-container .contact-content {width: 85%; max-width: 1000px; height: auto; margin: auto;}
+.contact-wrapper .contact-container p {text-align: center; padding: 3rem 0; font-size: 18px; line-height: 30px; color: #666;}
+
+.contact-map-wrapper {width: 100%; height: auto; display: flex; justify-content: center; padding: 3rem 0;}
+.contact-map-wrapper .contact-map-container {width: 100%; max-width: 1280px; height: auto;}
+.contact-map-wrapper .contact-map-container > ul {_display: grid; _grid-template-columns: 1fr 1fr; display: flex; justify-content: center; flex-wrap: wrap;}
+
+.contact-map-wrapper .contact-map-container > ul > li {padding: 0 1rem;}
+.contact-map-wrapper .contact-map-container .googlemap-wrap {padding: 1rem;}
+.contact-map-wrapper .contact-map-container .googlemap-wrap .googlemap-inner {width: 100%;}
+.contact-map-wrapper .contact-map-container .googlemap-wrap .googlemap-inner iframe {padding: 1rem;}
+
+.contact-map-wrapper .contact-map-container .line {width: 100%; height: 1px; background: #dedede; display: block;}
+
+.contact-map-wrapper .contact-map-container .text-area {padding: 0 0 0 3rem; display: flex; flex-direction: column; justify-content: center;}
+.contact-map-wrapper .text-area .map-title {font-size: 40px; font-weight: 400; margin-bottom: 1.5rem;}
+
+.contact-map-wrapper .text-area .map-content {display: flex; align-items: center; margin-top: 2rem;}
+.contact-map-wrapper .text-area .map-content .map-con-title {font-size: 16px; font-weight: 600;}
+.contact-map-wrapper .text-area .map-content .map-con-value {font-size: 14px; margin-left: 3rem;}
+.contact-map-wrapper .text-area .map-content  p {margin-bottom: 2rem;}

@@ -1,0 +1,12 @@
+.gall-wrapper {width: 100%; height: auto; display: flex; justify-content: center;}
+.gall-wrapper .gall-container {width: 100%; max-width: 1280px; display: flex;}
+.gall-wrapper .gall-container .gall-lists {width: 100%; display: flex; flex-wrap: wrap; padding: 3rem 2rem; display: flex;  justify-content: center;}
+.gall-wrapper .gall-lists li {width: 400px; height: 420px; overflow: hidden; animation: scale .3s 1; animation-fill-mode: forwards; transform: scale(0);}
+.gall-wrapper .gall-lists li img {width: 100%; padding: 2rem;}
+
+/* .gal-frame {animation: scale .3s 1; animation-fill-mode: forwards; transform: scale(0);} */
+
+@keyframes scale {
+    form{transform: scale(0);}
+    to{transform: scale(1);}
+}
