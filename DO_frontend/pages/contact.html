@@ -33,7 +33,7 @@
 
   <body>
     <!-- Header include -->
-    <div class="header-wrapper" w3-include-html="/DO_frontend/include/header.html"></div>
+    <div id="header-wrapper" class="header-wrapper" role="header"></div>
       
     <div class="contact-wrapper">
       <div class="contact-container">
@@ -87,10 +87,16 @@
     </div>
     
     <!-- Footer include -->
-    <div class="footer-wrapper" w3-include-html="/DO_frontend/include/footer.html"></div>
+    <div id="footer" class="footer-wrapper" role="footer"></div>
+
+    <!-- jQuery Frmework -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Include Files -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="/DO_frontend/js/include.js"></script>
 
     <!-- Main Javascript -->
